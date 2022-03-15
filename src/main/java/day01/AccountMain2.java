@@ -4,8 +4,8 @@ public class AccountMain2 {
 
     public static void main(String[] args) {
         Account ac1 = new Account();
-        //存款
         ac1.name = "A01";
+        // 存款
         ac1.deposit(100);
         //印出餘額
         ac1.print();
