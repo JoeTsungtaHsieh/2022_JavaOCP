@@ -9,4 +9,9 @@ public class Account {
     public void deposit(int amount){
         balance += amount;
     }
+    // 印出帳戶餘額
+    public void print() {
+        System.out.printf("%s $%d\n", name, balance);
+    }
+    
 }
