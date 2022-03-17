@@ -1,5 +1,7 @@
 package day02;
 
+import java.util.Arrays;
+
 public class ArrayDemo1 {
 
     public static void main(String[] args) {
@@ -19,5 +21,10 @@ public class ArrayDemo1 {
         for(int score:scores){
             System.out.println(score);
         }
+        // Arrrays.toString() 將陣列轉換成字串印出
+        System.out.println(Arrays.toString(scores));
+        
+        // 直接印出 scores
+        System.out.println(scores);
     }
 }
