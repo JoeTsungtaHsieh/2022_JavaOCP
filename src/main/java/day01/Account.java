@@ -5,9 +5,21 @@ public class Account {
 
     String name; //戶名
     int balance; // 帳戶餘額
+    
+    static void transfer(int amount, Account act1, Account act2) {
+        act1.withdrawal(amount);
+        act2.deposit(amount);
+    }
+    
+    // 轉帳程序
+    // amount: 轉帳金額
+    // act: 轉帳對象
+    void transfer(int amount, Account act){
+        withdrawal(amount);
+        act.deposit(amount);
+    }
     // 存款的程序(存款方法)
     // amount: 存款金額
-
     public void deposit(int amount) {
         if(amount <= 0 ){
             System.out.println("存款必須大於零");
@@ -31,6 +43,6 @@ public class Account {
 
     // 印出帳戶餘額
     public void print() {
-        System.out.printf("%s $%d\n", name, balance);
+        System.out.printf("%s $%,d\n", name, balance);
     }
 }

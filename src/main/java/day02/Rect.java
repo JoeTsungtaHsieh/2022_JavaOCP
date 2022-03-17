@@ -1,17 +1,18 @@
 package day02;
 
 public class Rect {
-    private int weight;
+    private int width;
     private int high;
     private int area;
     
-    void setWeightAndHigh(int w, int h){
-        weight = w;
+    void setWidthAndHigh(int w, int h) {
+        width = w;
         high = h;
         area = w * h;
     }
     
     int getArea() {
-        return  area;
+        return area;
     }
+    
 }
