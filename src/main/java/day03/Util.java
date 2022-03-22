@@ -1,6 +1,6 @@
 package day03;
 
-public class Uti1 {
+public class Util {
     // 計算 CV 的方法
     public static double getCV(double[] values) {
         double sd = getSD(values);
