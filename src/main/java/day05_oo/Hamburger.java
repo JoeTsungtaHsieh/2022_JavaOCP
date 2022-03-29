@@ -1,5 +1,6 @@
 package day05_oo;
 
+// 組合
 public class Hamburger {
     private String name; // 漢堡名稱
     private Bread bread;  // 內容物-麵包
