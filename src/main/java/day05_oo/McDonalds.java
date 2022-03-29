@@ -27,5 +27,12 @@ public class McDonalds {
         System.out.println(hamburger);
         int sum =hamburger.getPrice();
         System.out.printf("%s 總價:%d\n",hamburger.getName(),sum);
+        
+        // 牛肉漢堡
+        Hamburger hamburger2 = new Hamburger("牛肉漢堡", 10);
+        hamburger2.setBeef(beef1);
+        hamburger2.setBread(bread1);
+        System.out.println(hamburger2);
+        System.out.printf("%s 總價:%d\n",hamburger2.getName(),hamburger2.getPrice());
     }
 }
