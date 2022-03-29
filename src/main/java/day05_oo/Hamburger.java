@@ -1,18 +1,18 @@
 package day05_oo;
 
-public class Hambuger {
+public class Hamburger {
     private String name; // 漢堡名稱
     private Bread bread;  // 內容物-麵包
     private Cheese cheese; // 內容物-起司
     private Beef beef;   // 內容物-牛肉
     private Integer price; // 漢堡基礎價
 
-    public Hambuger(String name, Integer price) {
+    public Hamburger(String name, Integer price) {
         this.name = name;
         this.price = price;
     }
 
-    public Hambuger(String name, Bread bread, Cheese cheese, Beef beef, Integer price) {
+    public Hamburger(String name, Bread bread, Cheese cheese, Beef beef, Integer price) {
         this.name = name;
         this.bread = bread;
         this.cheese = cheese;
