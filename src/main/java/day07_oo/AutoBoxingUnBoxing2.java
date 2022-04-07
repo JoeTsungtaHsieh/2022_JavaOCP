@@ -30,11 +30,29 @@ public class AutoBoxingUnBoxing2 {
         
         Object[] values = {"100", 93, 81.5, new Integer(75)};
         // 求平均
-        double avg3 = Stream.of(values)
-                        .map(Object::toString)
-                        .mapToDouble(Double::parseDouble)
-                        .average()
+        double avg3 = Stream.of(values)   // Stream<Object>
+                        .map(Object::toString)   //Stream<String>
+                        .mapToDouble(Double::parseDouble) //DoubleString
+                        .average() 
                         .getAsDouble();
         System.out.println(avg3);
+        
+        double avg4 = Stream.of(values) // Stream<Object>
+                        .map(Object::toString)  //Stream<String>
+                        .map(Double::valueOf) //Stream<Double>
+                        .mapToDouble(Double::doubleValue) //DoubleString
+                        .average()
+                        .getAsDouble();
+        System.out.println(avg4);
+        
+         // 動動腦
+         Object[] names = {"Vincent", 5566, "Jo"};
+        // 請問平均名字有幾個字
+        double avg5 = Stream.of(names)
+                        .map(Object::toString)
+                        .mapToInt(String::length) // mapToInt((n -> n.length())
+                        .average()
+                        .getAsDouble();
+        System.out.println(avg5);
     }
 }
