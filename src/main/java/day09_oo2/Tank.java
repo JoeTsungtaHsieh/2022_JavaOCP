@@ -1,6 +1,6 @@
 package day09_oo2;
 
-public class Tank implements Car {
+public class Tank implements Car , Weapon{
 
     private int power;
 
@@ -16,6 +16,11 @@ public class Tank implements Car {
     @Override
     public int getPower() {
         return power;
+    }
+
+    @Override
+    public void shoot() {
+        System.out.println("發射穿甲彈");
     }
 
 }
