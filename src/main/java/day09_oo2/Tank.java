@@ -1,16 +1,16 @@
 package day09_oo2;
 
-public class BMW implements Car {
+public class Tank implements Car {
 
     private int power;
 
-    public BMW(int power) {
+    public Tank(int power) {
         this.power = power;
     }
 
     @Override
     public void move() {
-        System.out.println("用車輪走");
+        System.out.println("用履帶走");
     }
 
     @Override
