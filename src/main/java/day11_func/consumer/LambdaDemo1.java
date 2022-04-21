@@ -1,7 +1,12 @@
 package day11_func.consumer;
 
 import java.util.function.Consumer;
+/*
+@FunctionalInterface
+public interface Consumer<T> {
 
+    void accept(T t);
+*/
 
 public class LambdaDemo1 {
     public static void main(String[] args) {

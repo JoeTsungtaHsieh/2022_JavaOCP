@@ -1,4 +1,5 @@
-package day11_lambda;
+package day11_func.predicate;
+
 
 import java.util.function.Predicate;
 
