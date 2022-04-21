@@ -16,7 +16,7 @@ public class ButtonMain {
                 System.out.println("悠遊卡登入");
             }
         };
-        
+        yoyoButton.action();
         Button creditCardButton = new Button() {
             @Override
             public void action() {
@@ -24,7 +24,7 @@ public class ButtonMain {
             }
         };
         
-        yoyoButton.action();
+        
         creditCardButton.action();
     }
 }
