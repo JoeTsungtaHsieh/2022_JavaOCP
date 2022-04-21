@@ -23,8 +23,10 @@ public class ButtonMain {
                 System.out.println("信用卡登入");
             }
         };
-        
-        
         creditCardButton.action();
+        
+        // Java 8 Lambda
+        Button yoyoButton2 = () -> System.out.println("悠遊卡2.0登入");
+        yoyoButton2.action();
     }
 }
