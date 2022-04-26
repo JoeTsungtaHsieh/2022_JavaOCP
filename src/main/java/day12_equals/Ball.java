@@ -10,7 +10,22 @@ public class Ball {
     }
 
     @Override
+    public int hashCode() {
+        return 7 * 13 * (price + color.hashCode());
+    }
+
+    
+    
+    @Override
     public boolean equals(Object obj) {
+        // 判斷是否可轉型:
+        if(this == obj) {
+            return true;
+        }
+        if(!(obj instanceof Ball)){
+            System.out.println("不可轉型");
+            return false;
+        }
         Ball b = (Ball)obj;
         if(b.price == price && b.color.equals(color)){
             return  true;

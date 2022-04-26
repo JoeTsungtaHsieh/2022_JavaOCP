@@ -9,6 +9,10 @@ public class BallStore {
         System.out.println(b2);
         System.out.println(b1==b2);
         System.out.println(b1.equals(b2));
-        
+        System.out.println(b1.equals("我要搭火車"));
+        System.out.println("--------------------------");
+        Ball b3 = new Ball("Red",200);
+        Ball b4 = b3;
+        System.out.println(b3.equals(b4));
     }
 }
