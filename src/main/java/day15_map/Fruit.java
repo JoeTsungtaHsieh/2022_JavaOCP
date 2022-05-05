@@ -1,6 +1,6 @@
 package day15_map;
 
-public class Fruit {
+public class Fruit implements Comparable<Fruit>{
 
     private String name;
     private int count;
@@ -49,6 +49,11 @@ public class Fruit {
     @Override
     public String toString() {
         return "Fruit{" + "name=" + name + ", count=" + count + ", price=" + price + '}';
+    }
+
+    @Override
+    public int compareTo(Fruit o) {
+        return count - o.count;
     }
 
 }
