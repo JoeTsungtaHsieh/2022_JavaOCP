@@ -1,7 +1,7 @@
 package day15_map;
 
 public class Fruit implements Comparable<Fruit>{
-
+    public static Order order = Order.COUNT;
     private String name;
     private int count;
     private double price;
@@ -53,7 +53,14 @@ public class Fruit implements Comparable<Fruit>{
 
     @Override
     public int compareTo(Fruit o) {
-        return count - o.count;
+        switch(order) {
+            case COUNT: 
+                 return  count - o.count;
+                 
+            case PRICE: 
+                 return  (int)(price - o.price);     
+        }
+        return  0;
     }
 
 }
